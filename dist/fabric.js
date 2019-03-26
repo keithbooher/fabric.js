@@ -28785,7 +28785,8 @@ fabric.Image.filters.BaseFilter.fromObject = function(object, callback) {
    *   Position cursor:                click/touch
    *   Create selection:               click/touch & drag
    *   Create selection:               click & shift + click
-   *   Select line:                    double click
+   *   Select word:                    double click
+   *   Select line:                    triple click
    * </pre>
    */
   fabric.IText = fabric.util.createClass(fabric.Text, fabric.Observable, /** @lends fabric.IText.prototype */ {
@@ -30193,8 +30194,8 @@ fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.protot
     }
     this.__newClickTime = +new Date();
     var newPointer = options.pointer;
-    if (this.isDoubleClick(newPointer)) {
-      this.fire('dblclick', options);
+    if (this.isTripleClick(newPointer)) {
+      this.fire('tripleclick', options);
       this._stopEvent(options.e);
     }
     this.__lastLastClickTime = this.__lastClickTime;
