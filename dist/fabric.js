@@ -30234,9 +30234,6 @@ fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.protot
    */
   initClicks: function() {
     this.on('mousedblclick', function(options) {
-      this.selectWord(this.getSelectionStartFromPointer(options.e));
-    });
-    this.on('mousedblclick', function(options) {
       this.selectLine(this.getSelectionStartFromPointer(options.e));
     });
   },
