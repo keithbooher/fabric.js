@@ -28785,8 +28785,7 @@ fabric.Image.filters.BaseFilter.fromObject = function(object, callback) {
    *   Position cursor:                click/touch
    *   Create selection:               click/touch & drag
    *   Create selection:               click & shift + click
-   *   Select word:                    double click
-   *   Select line:                    triple click
+   *   Select line:                    double click
    * </pre>
    */
   fabric.IText = fabric.util.createClass(fabric.Text, fabric.Observable, /** @lends fabric.IText.prototype */ {
