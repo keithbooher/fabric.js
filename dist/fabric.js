@@ -1,4 +1,4 @@
-/* build: `node build.js modules= exclude=tripleclick minifier=uglifyjs` */
+/* build: `node build.js modules= minifier=uglifyjs` */
 /*! Fabric.js Copyright 2008-2015, Printio (Juriy Zaytsev, Maxim Chernyak) */
 
 var fabric = fabric || { version: '2.7.0' };
