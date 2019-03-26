@@ -30195,7 +30195,7 @@ fabric.util.object.extend(fabric.IText.prototype, /** @lends fabric.IText.protot
     this.__newClickTime = +new Date();
     var newPointer = options.pointer;
     if (this.isTripleClick(newPointer)) {
-      this.fire('tripleclick', options);
+      this.fire('dblclick', options);
       this._stopEvent(options.e);
     }
     this.__lastLastClickTime = this.__lastClickTime;
